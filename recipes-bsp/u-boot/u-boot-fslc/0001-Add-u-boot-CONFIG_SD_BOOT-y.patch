@@ -1,0 +1,22 @@
+From 9b1ccff74ebd20f81a44a1bb02f38903341ed3a0 Mon Sep 17 00:00:00 2001
+From: Andy Best <andy.best@latitude59.co.uk>
+Date: Fri, 16 Mar 2018 11:29:27 +0000
+Subject: [PATCH] Add u-boot CONFIG_SD_BOOT=y
+
+---
+ configs/pico-imx7d_defconfig | 2 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/configs/pico-imx7d_defconfig b/configs/pico-imx7d_defconfig
+index fdc3ff0..3fd5c79 100644
+--- a/configs/pico-imx7d_defconfig
++++ b/configs/pico-imx7d_defconfig
+@@ -34,3 +34,5 @@ CONFIG_USB_GADGET_PRODUCT_NUM=0xa4a5
+ CONFIG_CI_UDC=y
+ CONFIG_USB_GADGET_DOWNLOAD=y
+ CONFIG_OF_LIBFDT=y
++CONFIG_SD_BOOT=y
++CONFIG_SPL=y
+-- 
+2.7.4
+
