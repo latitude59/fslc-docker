@@ -17,4 +17,6 @@ BBLAYERS = " \
   ${BSPDIR}/sources/meta-fslc-docker \
   ${BSPDIR}/sources/meta-openembedded/meta-python \
   ${BSPDIR}/sources/meta-openembedded/meta-networking \
+  ${BSPDIR}/sources/meta-virtualization \
+  ${BSPDIR}/sources/meta-openembedded/meta-filesystems \
 "
