@@ -17,10 +17,8 @@ PACKAGECONFIG_append_pn-qemu-native = " sdl"
 PACKAGECONFIG_append_pn-nativesdk-qemu = " sdl"
 CONF_VERSION = "1"
 
-DL_DIR ?= "${BSPDIR}/downloads/"
-ACCEPT_FSL_EULA = "1"
-
 DISTRO_FEATURES_append = " virtualization"
 IMAGE_INSTALL_append = " docker"           
 IMAGE_INSTALL_append = " dropbear"
 IMAGE_INSTALL_append = " ntp"
+
