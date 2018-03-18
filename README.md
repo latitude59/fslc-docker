@@ -6,11 +6,13 @@ $ repo sync -j4
 ```
 Initial run:
 ```
-$ TEMPLATECONF=../sources/meta-fslc-docker/conf/ MACHINE=imx7d-pico DISTRO=fslc-framebuffer . sources/poky/oe-init-build-env build
+$ TEMPLATECONF=../sources/meta-fslc-docker/conf/ . sources/poky/oe-init-build-env build
 ```
-Subsequent runs:
+Change `MACHINE` and `DISTRO` in `build/conf/local.conf` if required.
+
+For subsequent runs:
 ```
-. setup-environment build
+. sources/poky/oe-init-build-env build
 ```
 Then:
 ```
