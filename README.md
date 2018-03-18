@@ -6,16 +6,16 @@ $ repo sync -j4
 ```
 Initial run:
 ```
-$ TEMPLATECONF=../sources/meta-fslc-docker/conf/ . sources/poky/oe-init-build-env build
+$ TEMPLATECONF=../sources/meta-fslc-docker/conf/ . sources/poky/oe-init-build-env build/
 ```
 Change `MACHINE` and `DISTRO` in `build/conf/local.conf` if required.
 
 For subsequent runs:
 ```
-. sources/poky/oe-init-build-env build
+. sources/poky/oe-init-build-env build/
 ```
 Then:
 ```
-$ ln -s ~/yocto_downloads ../downloads
+$ ln -s ~/yocto_downloads/ ../downloads/
 $ time bitbake core-image-minimal
 ```
